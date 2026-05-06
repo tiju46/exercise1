@@ -1,9 +1,9 @@
-let sum = 0;
 
-for (let i = 1; i < 1000; i++) {
-  if (i % 3 === 0 || i % 5 === 0) {
-    sum = sum + i;
-  }
+function checkBaggage() {
+    const weight = parseInt(document.getElementById('weightInput').value);
+    if (weight > 15) {
+        alert("Overweight baggage!");
+    } else {
+        alert("Baggage is fine.");
+    }
 }
-
-document.getElementById("result").textContent = sum;

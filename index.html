@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Multiples of 3 or 5</title>
+  <title>Exercise</title>
 </head>
 <body>
 
+  <!-- Exercise 1: Baggage Weight Check -->
+  <h2>Exercise 1: Baggage Weight Check</h2>
+  <input type="number" id="weightInput" placeholder="Enter baggage weight in kg" />
+  <button onclick="checkBaggage()">Check Weight</button>
   
-<h2>Sum of multiples of 3 or 5 below 1000</h2>
-<p id="result"></p>
+  <!-- Exercise 2: Sum of Multiples -->
 
-<script src="ex1.js"></script>
-<button onclick="showResult()">Show Result</button>
- <script src="ex2.js"></script>
-<h3>Enter Numbers for addition</h3>
-<input type="number" id="num1" placeholder="Enter first number" />
-<input type="number" id="num2" placeholder="Enter Second number" /> 
-<button onclick="addNumbers()">Add</button>
+  <h2>Exercise 2:</h2>
+  <h2>Sum of multiples of 3 or 5 below 1000</h2>
+  <button onclick="showResult()">Show Result</button>
+
+  
+  <h2>Sum of Multiples - User Input</h2>
+  <input type="number" id="aInput" placeholder="Enter a" />
+  <input type="number" id="bInput" placeholder="Enter b" />
+  <input type="number" id="nInput" placeholder="Enter n" />
+  <button onclick="sumMultiples()">Calculate Sum</button>
+
+  <!-- Exercise 3: List Sum -->
+  <h2>Exercise 3: Euler List Functions</h2>
+  
+  <h3>Euler 1: Sum of multiples of a OR b in list l</h3>
+  <input type="number" id="a1" placeholder="Enter a" />
+  <input type="number" id="b1" placeholder="Enter b" />
+  <input type="text" id="l1" placeholder="Enter list l (comma separated)" />
+  <button onclick="eulerlist()">Run Euler 1</button>
+  
+  <h3>Euler 2: Sum of multiples of ANY in list a in list l</h3>
+  <input type="text" id="a2" placeholder="Enter 2 values for list a, comma separated" />
+  <input type="text" id="l2" placeholder="Enter list l (comma separated)" />
+  <button onclick="euler2Lists()">Run Euler 2</button>
+  
+  <h3>Euler 3: Sum of multiples of ANY in list a in list l (bigger)</h3>
+  <input type="text" id="a3" placeholder="Enter list a (comma separated)" />
+  <input type="text" id="l3" placeholder="Enter list l (comma separated)" />
+  <button onclick="euler2Lists1()">Run Euler 3</button>
+
+  <!-- Exercise 4: result : factors : multiples -->
+  <h2>Exercise 4: result : factors : multiples</h2>
+  <input type="text" id="factorsinput" placeholder="Enter factors : multiples (space separated)" />
+  <button onclick="printresult()">Calculate Result</button>
+  <p id="resultval"></p>
+
+  <!-- Exercise 5: Display "corrupt" where an error occurs -->
+  <h2>Exercise 5: Error Handling - 3 Cases</h2>  
+  <input type="text" id="corruptInput" placeholder="Enter data to check (e.g., 3 5:1 2 3 4 5 6 7 8 9)" />
+  <button onclick="checkCorrupt()">Check for Corruption</button>
+  <p id="corruptResult"></p>
+
+  <!-- Exercise 6: GitHub Most Forked Repo -->
+  <h2>Exercise 6: GitHub Repo with Most Forks</h2>
+  <input type="text" id="username" placeholder="Enter GitHub username (e.g., docker)" />
+  <button onclick="findMostForked()">Find Most Forked Repo</button>
+  <p id="repoResult"></p>
+
+  <script src="ex1.js"></script>
+  <script src="ex2.js"></script>
+  <script src="ex3.js"></script>
+  <script src="ex4.js"></script>
+  <script src="ex5.js"></script>
+  <script src="ex6.js"></script>
  
 </body>
 </html>
